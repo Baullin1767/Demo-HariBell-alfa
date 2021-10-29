@@ -7,16 +7,23 @@ using UnityEngine.SceneManagement;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
-    // Start is called before the first frame update
+    [SerializeField]
+    GameObject playerPrefab;
+    [SerializeField]
+    Vector3 spawnPosition;
+    
     void Start()
     {
-        
+        PhotonNetwork.Instantiate(playerPrefab.name, spawnPosition, Quaternion.identity);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+    public void Leave() 
+    {
+        PhotonNetwork.LeaveRoom();
     }
 
     /// <summary>

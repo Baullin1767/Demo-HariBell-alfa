@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,14 +12,18 @@ public class MouseLook : MonoBehaviour
 
     float xRotation = 0f;
 
+    PhotonView photonView;
+
     void Start()
     {
+        photonView = GetComponent<PhotonView>();
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     
     void Update()
     {
+        if (!photonView.IsMine) { return; }
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
