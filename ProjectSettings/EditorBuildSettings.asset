@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Demo.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Lecture Room.unity
-    guid: 358d9211f33c4a74f921ae9f8872387e
+    path: Assets/Scenes/Lecture Hall.unity
+    guid: 3056411659980c343bdc18413abe0bbe
   m_configObjects: {}
