@@ -33,6 +33,6 @@ public class LobbyManeger : MonoBehaviourPunCallbacks
     {
         Debug.Log("Joined the room");
 
-        PhotonNetwork.LoadLevel("Demo");
+        PhotonNetwork.LoadLevel("General Hall");
     }
 }

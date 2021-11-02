@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Door : InteractiveObject
+public class Door : _InteractiveObject
 {
     [SerializeField] string sceneName;
     public override void Interective()

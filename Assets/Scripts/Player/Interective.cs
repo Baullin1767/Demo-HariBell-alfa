@@ -38,12 +38,12 @@ public class Interective : MonoBehaviour
 
     void Interact() 
     {
-        if (hit.transform != null && hit.transform.GetComponent<InteractiveObject>())
+        if (hit.transform != null && hit.transform.GetComponent<_InteractiveObject>())
         {
             Debug.DrawRay(ray.origin, ray.direction * maxDistanceRay, Color.green);
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                hit.transform.GetComponent<InteractiveObject>().Interective();
+                hit.transform.GetComponent<_InteractiveObject>().Interective();
             }
         }
     }

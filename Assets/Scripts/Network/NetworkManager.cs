@@ -23,6 +23,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LeaveRoom();
     }
+    public void LeaveRoom() 
+    {
+        SceneManager.LoadScene(1);
+    }
 
     /// <summary>
     /// ѕроисходит когда текущий игрок покидает комнату
