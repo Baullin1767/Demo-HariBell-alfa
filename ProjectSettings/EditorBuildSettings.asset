@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lecture Hall.unity
     guid: 3056411659980c343bdc18413abe0bbe
+  - enabled: 1
+    path: Assets/Scenes/Video Chat Hall.unity
+    guid: e977d1276a1929a4f976b773be16a3c9
   m_configObjects: {}
