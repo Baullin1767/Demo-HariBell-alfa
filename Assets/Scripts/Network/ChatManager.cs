@@ -14,7 +14,7 @@ public class ChatManager : MonoBehaviour, IChatClientListener
 
     [SerializeField] InputField inputName;
     [SerializeField] GameObject panelLogin;
-    [SerializeField] GameObject crosshairSight;
+    [SerializeField] GameObject _interface;
 
     public void DebugReturn(DebugLevel level, string message)
     {
@@ -84,7 +84,7 @@ public class ChatManager : MonoBehaviour, IChatClientListener
     void Start()
     {
         chatClient = new ChatClient(this);
-        crosshairSight.SetActive(false);
+        _interface.SetActive(false);
     }
     void Update()
     {
@@ -100,7 +100,7 @@ public class ChatManager : MonoBehaviour, IChatClientListener
     public void LoginButton()
     {
         panelLogin.SetActive(false);
-        crosshairSight.SetActive(true);
+        _interface.SetActive(true);
         userID = inputName.text;
         chatClient.Connect(PhotonNetwork.PhotonServerSettings.AppSettings.AppIdChat, PhotonNetwork.AppVersion, new AuthenticationValues(userID));
     }

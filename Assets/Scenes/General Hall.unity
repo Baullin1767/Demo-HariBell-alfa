@@ -3456,7 +3456,7 @@ MonoBehaviour:
   textMessage: {fileID: 1083217883}
   inputName: {fileID: 1802536495}
   panelLogin: {fileID: 563073370}
-  crosshairSight: {fileID: 1762685224}
+  _interface: {fileID: 1762685224}
 --- !u!1 &2109324398
 GameObject:
   m_ObjectHideFlags: 0
