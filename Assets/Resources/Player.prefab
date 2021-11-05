@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 6175770883311577694}
   - component: {fileID: 6522436611638888229}
   - component: {fileID: 6815548148255164903}
+  - component: {fileID: -4501932361684008061}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -325,6 +326,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Camera: {fileID: 6881514274580786718}
   maxDistanceRay: 2
+--- !u!114 &-4501932361684008061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6881514274322008979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddec46cf6a4c4addbf21b6be8442124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logLevel: 3
+  ignoreGlobalLogLevel: 0
+  aec: 1
+  aecHighPass: 0
+  agc: 1
+  agcCompressionGain: 9
+  vad: 1
+  highPass: 0
+  bypass: 0
+  noiseSuppression: 0
+  reverseStreamDelayMs: 120
+  forceNormalAecInMobile: 0
+  AECMobileComfortNoise: 0
 --- !u!1 &6881514274580786716
 GameObject:
   m_ObjectHideFlags: 0

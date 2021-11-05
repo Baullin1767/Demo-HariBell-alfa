@@ -910,7 +910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812d1cd025c891a47af0872867da243f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 6881514274322008979, guid: d5023c37a83777e46bf99fa458afe7c5, type: 3}
+  playerPrefab: {fileID: 6881514274322008979, guid: eb0a79cee9571d349b03e2d363c8c9a9, type: 3}
   spawnPosition: {x: 0, y: 1, z: 5}
 --- !u!1 &408577831
 GameObject:

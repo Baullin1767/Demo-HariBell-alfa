@@ -1,19 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
 public class Interective : MonoBehaviour
 {
     [SerializeField]
-    Camera Camera;
+    UnityEngine.Camera Camera;
     [SerializeField]
     float maxDistanceRay;
     Ray ray;
     RaycastHit hit;
 
-    
+    PhotonView photonView;
+
+    private void Start()
+    {
+        photonView = GetComponent<PhotonView>();
+    }
+
     void Update()
     {
+        if (!photonView.IsMine) { return; }
         Ray();
         DrawRay();
         Interact();

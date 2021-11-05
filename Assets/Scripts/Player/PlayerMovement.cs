@@ -10,9 +10,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     CharacterController controller;
 
-    PhotonView photonView;
-
     bool controlLock = true;
+    
+    PhotonView photonView;
 
     private void Start()
     {
@@ -21,8 +21,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (!photonView.IsMine){ return; }
+        if (!photonView.IsMine) { return; }
 
+        Move();
+    }
+
+    
+    private void Move()
+    {
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (controlLock == true)
@@ -49,9 +55,7 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 controller.Move(move * runSpeed * Time.deltaTime);
-            } 
+            }
         }
-
-        
     }
 }

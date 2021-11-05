@@ -35,4 +35,9 @@ public class LobbyManeger : MonoBehaviourPunCallbacks
 
         PhotonNetwork.LoadLevel("General Hall");
     }
+
+    public void Exit() 
+    {
+        Application.Quit();
+    }
 }
