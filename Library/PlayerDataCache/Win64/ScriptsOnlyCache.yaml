@@ -5,7 +5,6 @@ ScriptsOnlyBuild:
     - ChangeColor
     - ChangeName
     - ChatManager
-    - Door
     - ExitGames.Demos.DemoPunVoice.FirstPersonController
     - ExitGames.Demos.DemoPunVoice.Highlighter
     - ExitGames.Demos.DemoPunVoice.OrthographicController
@@ -103,6 +102,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
+    - Class: 102
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -144,11 +145,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3316}
     - Class: 114
-      Script: {instanceID: 3434}
-    - Class: 114
       Script: {instanceID: 3504}
     - Class: 114
+      Script: {instanceID: 3552}
+    - Class: 114
       Script: {instanceID: 4220}
+    - Class: 114
+      Script: {instanceID: 4298}
     - Class: 114
       Script: {instanceID: 4406}
     - Class: 114
@@ -160,8 +163,6 @@ ScriptsOnlyBuild:
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
-      Script: {instanceID: 0}
-    - Class: 136
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -176,6 +177,10 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
     Assets/Scenes/Lecture Hall.unity:
     - Class: 1
@@ -2185,4 +2190,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/General Hall.unity
   - Assets/Scenes/Lecture Hall.unity
   - Assets/Scenes/Video Chat Hall.unity
-  playerPath: "C:/Project of Unity/\u0418\u0433\u0440\u044B/Test/Test.exe"
+  playerPath: C:/Users/Ky3mi/Sasha/Selfmade Game/Test/Test.exe
