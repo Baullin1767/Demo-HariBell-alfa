@@ -14,12 +14,12 @@ public class Camera : MonoBehaviour
 
     float xRotation = 0f;
 
-    bool mouseLock = false;
 
     void Start()
     {
         photonView = GetComponent<PhotonView>();
         _camera = GetComponent<Camera>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     
@@ -32,21 +32,8 @@ public class Camera : MonoBehaviour
 
     private void Look()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            if (mouseLock == true)
-            {
-                Cursor.lockState = CursorLockMode.None;
-                mouseLock = false;
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                mouseLock = true;
-            }
-        }
 
-        if (mouseLock)
+        if (Cursor.lockState == CursorLockMode.Locked)
         {
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
